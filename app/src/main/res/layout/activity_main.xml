@@ -1,18 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".MainActivity">
-
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:text="Перевод систем счисления"
+        android:gravity="center"
+        android:textSize="65px"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text="Введите число:"
+        android:textColor="#000000"
+        android:textSize="65px"/>
+    <EditText
+        android:id="@+id/geterNum"
+        android:layout_width="343dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_gravity="center"
+        android:backgroundTint="#787878"
+        android:gravity="center"
+        android:inputType="text"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="70px" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text="Из какой системы переводить:"
+        android:textColor="#000000"
+        android:textSize="65px"/>
+    <EditText
+        android:id="@+id/geterSystemNum"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:inputType="text"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="70px"
+        android:backgroundTint="#787878"/>
+    <TextView
+        android:id="@+id/TextViewOperation"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text="В какую систму переводить:"
+        android:textColor="#000000"
+        android:textSize="65px"/>
+    <EditText
+        android:id="@+id/geterSystemTranslate"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:inputType="text"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="70px"
+        android:backgroundTint="#787878"/>
+    <Button
+        android:id="@+id/buttonResult"
+        android:layout_width="218dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:text="Посчитать"
+        android:textSize="35px"
+        android:backgroundTint="#0073FF"/>
+    <Button
+        android:id="@+id/Cleaner"
+        android:layout_width="218dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:text="Очистить"
+        android:textSize="35px"
+        android:backgroundTint="#0073FF"/>
+    <TextView
+        android:id="@+id/TextViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:gravity="center"
+        android:text="Результат:"
+        android:textColor="#000000"
+        android:textSize="65px"/>
+    <TextView
+        android:id="@+id/seterResult"
+        android:layout_width="369dp"
+        android:layout_height="76dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="70px"/>
+</LinearLayout>
